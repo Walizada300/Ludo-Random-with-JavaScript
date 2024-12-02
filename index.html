@@ -1,0 +1,47 @@
+<html>
+  <head>
+<script type="text/javascript"> 
+    function ok(){
+      document.getElementById('ok').style.transform = "rotate(360deg)";
+      document.getElementById('ok').style.transition = "all 0.3s";
+      var no = (Math.round(Math.random()*5)+1);
+      var one = document.getElementById('ok1');
+      one.style.transform = "rotate(360deg)";
+      one.style.transform = "all 0.3s";
+      var mark = document.getElementById('mark');
+      if(no == 1){
+        one.src = "one.png";
+        mark.style.transform = "translatex(300px)";
+        mark.style.transition = "all 1s";
+      }else if(no == 2){
+        one.src = "two.png";
+        mark.style.transform = "translatex(600px)";
+        mark.style.transition = "all 1s";
+      }else if(no == 3){
+        one.src = "three.png";
+        mark.style.transform = "translatey(100px)";
+        mark.style.transition = "all 1s";
+      }else if(no == 4){
+        one.src = "four.png";
+        mark.style.transform = "translatey(200px)";
+        mark.style.transition = "all 1s";
+      }else if(no == 5){
+        one.src = "five.png";
+        mark.style.transform = "translatex(400px)";
+        mark.style.transition = "all 1s";
+      }else if(no == 6){
+        one.src = "six.png";
+        mark.style.transform = "translatex(500px)";
+        mark.style.transition = "all 1s";
+      }
+     
+    }
+</script>
+  </head>
+  <body>
+  
+  <button onclick="ok()" id="ok"><img src="icons8_dice_50px.png" width="24" id="ok1"></button>
+  <br>
+  <img src="icons8_marker_50px.png" width="30" id="mark">
+  </body>
+</html>
